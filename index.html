@@ -70,11 +70,22 @@
                   //2. Member 2
 
                   //3. Member 3 ( Method defination)
-                  News3(){
+                  subrectionA(x,y){// Formal argument
+                  // Function body 
+                  // Every method should return something 
+                  return x-y // statement 
 
                   }
 
             }
+
+
+            // You have to create  class object
+            // let object = New ClassName() 
+            // object.method();
+            let myobjectC = new MyClassC();
+            let resultc = myobjectC.subrectionA(299,99); // 299 and 99 are actual argument
+            console.log(resultc);
 
             class MyclassD{ // Pascalcase
                   //1. Member 1 
@@ -82,11 +93,75 @@
                   //2. Member 2 
 
                   //3. Member 3 (Method defination)
-                  News4(){
+                  subrectionB(x,y){// Formal argument 
+                  // Function body 
+                  // Every method should return something 
+                  return x-y // statement 
+
 
                   }
 
             }
+
+            // You have to create class object 
+            // let object = new ClassName()
+            // object.method();
+            let myobjectD = new MyclassD();
+            let resultd = myobjectD.subrectionB(999,599);// 999 and 599 are actual argument 
+            console.log(resultd);
+
+            class MyClassE{ // Pascalcase
+                  //1. Member 1
+
+                  //2. Member 2 
+
+                  //3. Member 3 (Method defination)
+                  Lucky(){
+                    console.log('Hello')
+
+                  }
+
+            }
+            let myobjectE = new MyClassE();
+            myobjectE.Lucky('Hello')
+
+            class MyClassF{ // Pascalecase
+                  //1. Member 1 
+
+                  //2. Member 2 
+
+                  //3. Member 3 (Method defination)
+                  myfunction(){
+                    console.log('Lucky singh')
+
+                  }
+                
+            }
+            let myobjectF = new MyClassF();
+            myobjectF.myfunction()
+
+            class MyClassG extends MyclassD{
+                //1. Member 1 
+
+                //2. Member 2
+
+                //3. Member 3 (Method defination)
+                studentClassName(classname){
+                // Function body
+                // Ever method should return something
+                return 'myclass'+""+classname; // stetment
+                }
+              
+                
+            }
+            // let objectname = new classname
+            // object.method 
+            let myobjectG = new MyClassG();
+            var resultG = myobjectG.studentClassName("BCA")
+            window.alert(resultG)
+            window.alert(resultd)
+            window.alert(resultc)
+            window.alert(resultb)
         </script>
     </body>
 </html>
